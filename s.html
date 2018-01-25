@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<head>
+    <title></title>
+    <link rel ="icon" href="images\sin.jpg">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+   <!-- Body -->
+<body>
+<div class="col-1">
+    <div class="col-3" id="details">
+        <div class="img">
+        <img src="images/sin.jpg">
+        <h3 align="center">SINDHU NAGADURGA</h3>
+    </div>
+<script>
+
+    /* details */
+  var sindhu = { 
+    "role" : "Trainer cum Developer", 
+    "email":"ndsindhu.c@apssdc.in",
+    "location" : "Vijayawada, Andhra Pradesh",
+    "mobile":"(+91) 0001112222",
+  };
+
+
+  /* Qualifications */
+   var education={
+    "Qualification" : ["B-Tech(C.S.E)","Inter","SSC"],
+    "NameofInstitution" : ["Sri Vasavi Institute of Engineering and Technology", "R.K junior college","KommaReddy Talent High School"],
+    "Area" : ["Machilipatnam, Andhra Pradesh","Machilipatanam, Andhra Pradesh","Machilipatanam, Andhra Pradesh"]
+    }
+             document.getElementById("details").innerHTML += "<p>" +sindhu["role"]+"<p>";
+             document.getElementById("details").innerHTML += "<p>" +sindhu["email"]+"<p>";
+             document.getElementById("details").innerHTML += "<p>" +sindhu["location"]+"<p>";
+             document.getElementById("details").innerHTML += "<p>" +sindhu["mobile"]+"<p>";
+
+</script>
+<hr>
+<!-- Skills Known -->
+ <h2> SKILLS </h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>Java SE</li>
+    <li>Intrenship at WINNERVE Info Services pvt ltd, worked on Java Technology.</li>
+  </ul>
+
+</div>
+<!-- Educational Qualifications-->
+<div class="col-4">
+    <h2>EDUCATION</h2>
+    <div id="education">
+        <script>
+            for(i in education.Qualification){
+              document.getElementById('education').innerHTML+="<b>"+education.Qualification[i]+"</b><br>";
+             document.getElementById('education').innerHTML+=education.NameofInstitution[i]+"<br>";
+             document.getElementById('education').innerHTML+=education.Area[i]+"<br><br>";  
+            }
+        </script>
+    </div>
+    
+</div>
+<!-- Other Activities-->
+<div class="col-4">
+        <h2>OTHER ACTIVITIES</h2>
+        <div>
+          <ul>
+            <li>First Prize Winner in several Throw Ball and Ball Badminton Competitions at College</li>
+            <li>Participated in many social activity camps through NSS.</li>
+            <li>Organised , as part of organising teams ,many cultural events at college.</li>
+          </ul>
+       </div>
+</div>
+
+<!-- Seminars/workshops-->
+<div class="col-4">
+      <h2> SEMINARS/WORKSHOPS </h2>
+       <div>
+         <p><b>Title: MEMS Technology</b></p>
+        <ul>
+          <li>Technology used to prevent from accidents with the help of airbags using some sensors.</li>
+          <li>The airbags in it contains nitrogen gas.</li>
+          <li>Participated in a workshop on "Ethical Hacking".</li>
+        </ul> 
+       </div>
+</div>
+<div class="col-4">
+    <h2>PERSONAL INFORMATION</h2>
+    <div>
+       <p>
+       Name                 :  CH. Sindhu NagaDurga.</br>
+       Father’s Name        :  CH. Samudraiah.</br>
+       Languages Known      :  Telugu, English, Hindi.</br>
+       Hobbies/Interests    :  Sports, Gardening, learning from Internet.</br>
+       Address              :  MTM</br>
+     </p>
+    </div>
+</div>    
+     <div class="col-4">
+      <h2>DECLARATION</h2>
+      <p>I do here by declare that the particulars of information and facts stated here and above are true and complete to the best of my knowledge and belief. </p>
+    </div>
+</div>
+</body>
+</html>
