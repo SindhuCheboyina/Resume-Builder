@@ -33,6 +33,7 @@ img {
 }
 .img{
 	width:100%;
+	height:auto;
 }
 .col-1{width:100%;}
 .col-2{width:30%;}
@@ -62,6 +63,7 @@ p
 @media only screen and (max-width:768px){
     [class*="col-"]{
         width:100%;
+	font-size:18px;
     }
 }
 h1{
