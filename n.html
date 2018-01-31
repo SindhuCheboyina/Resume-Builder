@@ -6,45 +6,43 @@
     <link rel ="icon" href="images\jyo.jpg">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    
-</head>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
 <!-- Body -->
 <body>
 <div class="col-1">
-    <div class="col-3" id="details" style="padding-bottom:60%">
+    <div class="col-3" id="details">
           <img src="images/jyo.jpg" class="img">
           <h3>Nagajyothi</h3>
         <script>
-
-          /* Profile Data */
-           var nagajyothi = { 
-              "role" : "Trainer cum Developer", 
+  /* Profile Data */
+           var nagajyothi={
+              "role" : "Trainer cum Developer",
               "email":"nagajyothi.thotam@gmail.com",
               "location" : "Vijayawada, Andhra Pradesh",
               "mobile":"(+91) 9705100817",
             };
-
-                /* Qualifications */
+  /* Qualifications */
            var education ={
               "Qualification" : ["B-Tech(C.S.E)","Inter","SSC"],
               "NameofInstitution" : ["Siddartha institute of science and technology", "S.V junior college","Victory High School"],
               "Area" : ["Puttur, Andhra Pradesh","Rlykodur, Andhra Pradesh","Rlykodur, Andhra Pradesh"]
               }
-
              document.getElementById("details").innerHTML += "<p>" +nagajyothi["role"]+"<p>";
              document.getElementById("details").innerHTML += "<p>" +nagajyothi["email"]+"<p>";
              document.getElementById("details").innerHTML += "<p>" +nagajyothi["location"]+"<p>";
              document.getElementById("details").innerHTML += "<p>" +nagajyothi["mobile"]+"<p>";
         </script>
        <hr>
-
-         <!--skills known  -->
+<!--skills known  -->
          <h2> SKILLS </h2>
-         <ul>
+         <div id="skills">
+         <!--ul>
          <li>HTML</li>
           <li>CSS</li>
           <li>JAVASCRIPT</li>
+        </ul--></div>
     </div>
           <!-- Educational Qualifications-->
      <div class="col-4">
@@ -54,55 +52,54 @@
             for(i in education.Qualification){
               document.getElementById("education").innerHTML+="<b>"+education.Qualification[i]+"</b><br>";
               document.getElementById("education").innerHTML+=education.NameofInstitution[i]+"<br>";
-               document.getElementById("education").innerHTML+=education.Area[i]+"<br><br>";  
+               document.getElementById("education").innerHTML+=education.Area[i]+"<br><br>";
             }
         </script>
       </div>
-    
 </div>
 <!-- Acheivements-->
 <div class="col-4">
         <h2> ACHIEVEMENTS </h2>
-        <div>
-          <p> Merit Certificate (1st prize)| Technical event: CYBRUS &#39 17 at Siddartha Institute of Science and Technology | Tirupathi  |4th April 2017.</p> 
+        <div id="achievements">
+          <!--p> Merit Certificate (1st prize)| Technical event: CYBRUS &# 39 17 at Siddartha Institute of Science and Technology | Tirupathi  |4th April 2017.<!/p-->
         </div>
 </div>
 
 <!--workshops-->
 <div class="col-4">
       <h2> WORKSHOPS </h2>
-       <div>
-        
-          <p> Workshop | Android App Development | Technophobia Systems | Sri Sai Institute of Technology and Science | 27th & 28th October 2014.</p>
+       <div id="workshops">
+
+          <!--p> Workshop | Android App Development | Technophobia Systems | Sri Sai Institute of Technology and Science | 27th & 28th October 2014.</p-->
      </div>
 </div>
 <!--Technical Seminar-->
 <div class="col-4">
       <h2> TECHNICAL SEMINAR </h2>
-       <div>
-        
-          <p><b> Title: Apple Talk | 2017<b></p>
+       <div id="seminar">
+         <!--p><b> Title: Apple Talk | 2017<b></p>
           <h4>&nbsp &nbsp Description</h4>
-          <p> AppleTalk is a network operating system designed to connect Apple Computers. Its components are built on Macintosh operating systems. This mechanism uses of CSMA/CA a media access control method.  And AppleShare is used as the file and print sharing protocol on AppleTalk networks.</p>
+          <p> AppleTalk is a network operating system designed to connect Apple Computers. Its components are built on Macintosh operating systems. This mechanism uses of CSMA/CA a media access control method.  And AppleShare is used as the file and print sharing protocol on AppleTalk networks.</p-->
      </div>
+     <script src="scripts/main.js" async></script>
  </div>
  <div class="col-4">
   <h2>PERSONAL INFORMATION</h2>
-    <div>
-       <p>
+    <div id="personalinfo">
+       <!--p>
        Name                 :  T. Naga Jyothi.</br>
        Father’s Name        :  T. Venkat Ramana.</br>
        Languages Known      :  Telugu, English, Hindi.</br>
        Hobbies/Interests    :  Sports, Gardening, learning from Internet.</br>
        Address              :  TPT</br>
-     </p>
+     </p-->
     </div>
-</div>    
-
+</div>
      <div class="col-4">
-      <h2> DECLARATION </h2>
-      <p>I do here by declare that the particulars of information and facts stated here and above are true and complete to the best of my knowledge and belief. </p>
 
+      <h2> DECLARATION </h2>
+<div id="declaration">
+    </div>
 </div>
 </div>
 </body>
